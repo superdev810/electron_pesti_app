@@ -1,0 +1,202 @@
+.new-postlt {
+    display: block;
+}
+
+.btn.voice-btn{
+    width: 25px;
+    line-height: 25px;
+    padding: 1px 5px!important;
+    margin: 0px 5px;
+}
+
+.customer-memo {
+    height: 100px;
+}
+
+.header{
+    text-align: center;
+    font-size: 24px;
+    background: #f9d48b;
+    padding: 10px;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+    font-weight: bold;
+    color: white;
+}
+.page-number{
+    float: right;
+    font-size: 18px;
+    color: #555;
+    text-align: right;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.btn{
+    width: 100px;
+    margin: 10px;
+    padding: 5px;
+    bottom: 10px;
+    right: 10px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(#eedc00, #aaa400);
+    color: black;
+    text-decoration: none;
+    box-shadow: 0px 3px 5px rgba(0,0,0,.3);
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+}
+.btn:hover{
+    background: linear-gradient(#eeeb07, #a8aa03);
+    color: white;
+}
+.btn:active{
+    background: linear-gradient(#a8aa03, #c7c406);
+    box-shadow: 0px 0px 5px rgba(0,0,0,.5);
+}
+.btn-area{
+    margin-right: 5px;
+}
+.save-btn{
+    float: right;
+    font-weight: bold;
+}
+.new-btn{
+    float: right;
+    font-weight: bold;
+}
+
+.tag-area{
+    margin: 10px;
+}
+.tag{
+    position: relative;
+    float: left;
+    min-width: 200px;
+    border: solid 1px #ffab00;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    margin-top: 10px;
+}
+
+.tag .tag-name {
+    position: absolute;
+    left: 10px;
+    top: -15px;
+    padding-left: 5px;
+    padding-right: 5px;
+    background: #ffd581;
+    color: black;
+    font-weight: bold;
+}
+
+.tag .field{
+    float: left;
+    margin: 2px;
+    padding: 5px;
+    background: #abcf9a;
+}
+.tag .field-name{
+    float: left;
+    min-width: 100px;
+    width: 100px!important;
+    color: black;
+}
+.tag .field-value{
+    float: left;
+    width: 320px;
+    min-width: 50px;
+    background: transparent;
+    border: solid 1px #eee;
+    padding: 3px;
+    color: black;
+}
+.tag .field-value.warning{
+    border: solid 1px red;
+    background: #ffdae4;
+}
+.fill-width {
+    width: 100%;
+}
+
+.modal-save-btn {
+    margin-bottom: 10px!important;
+}
+#customer_menu {
+    position: absolute;
+    display: none;
+    background-color: #cfc200;
+    z-index: 1;
+    width: 240px;
+    padding: 5px;
+    right: 5px;
+    margin-top: 45px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+    border-radius: 5px;
+}
+#customer_menu a{
+    cursor: pointer;
+}
+.modal_btn {
+    width: 250px;
+    margin: 10px;
+    padding: 5px;
+    bottom: 10px;
+    right: 10px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(#eedc00, #aaa400);
+    color: black;
+    text-decoration: none;
+    box-shadow: 0px 3px 5px rgba(0,0,0,.3);
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+}
+.drop-zone {
+    width: 300px;
+    height: 200px;
+    position: relative;
+    margin: 0  auto;
+    border: 2px dashed rgba(0,0,0,.3);
+    border-radius: 20px;
+    font-family: Arial;
+    text-align: center;
+    line-height: 180px;
+    font-size:20px;
+    color: rgba(0,0,0,.3);
+}
+.drop-zone input {
+    position: absolute;
+    cursor: pointer;
+    left: -175px;
+    top: -25px;
+    width: 475px;
+    bottom: 0px;
+}
+
+.drop-zone.mouse-over {
+    border: 2px dashed rgba(0,0,0,.5);
+    color: rgba(0,0,0,.5);
+}
+.click-here {
+    position: relative;
+    cursor: pointer;
+    margin: 0  auto;
+    color:white;
+    font-size: 12px;
+    width: 300px;
+    height: 200px;
+    border-radius: 4px;
+    background-color: #3b85c3;
+    overflow: hidden;
+}
+.click-here:hover {
+    background-color: #4499DD;
+}
+.file-image {
+    width:300px;
+    height: 200px;
+}

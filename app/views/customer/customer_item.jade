@@ -1,0 +1,18 @@
+.main-container
+
+    .header 顧客ページ
+        #customer_pagenumber.page-number
+    // -----------------------------Default Tag Area
+    .default-tag-area.tag-area
+        .tag: .field
+                span.field-name 顧客氏名
+                input#customer_name.field-value(type='text',name='customer_name',placeholder='顧客氏名',value=result[0].data.customer_name,readonly,required)
+        .tag: .field
+                span.field-name よみがな
+                input#customer_name_pronounce.field-value(type='text',name='customer_name_pronounce',placeholder='よみがな',value=result[0].data.pronounce,readonly,required, wrap)
+
+    // ----------------------------Extend Tags Area
+    .extend-tags-area.tag-area
+
+input#customer_result_id.field-value(type='hidden', name='customer_result_id', placeholder='よみがな', value=result[0]._id)
+script(src='../js/customer_item.js')

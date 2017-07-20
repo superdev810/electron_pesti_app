@@ -1,0 +1,16 @@
+extends layout
+block content
+    div.main-container.home-page
+        div.setting-area.row
+            div.col-md-6
+                div.form-group
+                    label(for='user_email') メール
+                    input#user_email.form-control(type="text", name="user_email")
+
+            div.col-md-12
+                span#setting-email-error.col-xs-offset-0 Email is not valid
+            div
+                button#save_email_btn(type="button", class="setting-save-btn") 保存
+        div.calendar-area
+            div#datepicker
+    script(src="../js/setting.js")

@@ -1,0 +1,25 @@
+extends ../templates/layout
+
+block styles
+    link(rel="stylesheet",href="../css/new_customer.css")
+
+block scripts
+    script(src='../lib/extend/extend.js')
+    script(src='../js/classes/Postit.js')
+    script(src='../js/classes/PostitField.js')
+    script(src='../js/classes/PostitDialog.js')
+    script(src='../js/classes/PostitFileDialog.js')
+
+    script(src='../js/new_customer.js')
+
+block content
+    if (search == true)
+        include customer_item
+    else
+        include new
+block scripts
+
+
+
+
+

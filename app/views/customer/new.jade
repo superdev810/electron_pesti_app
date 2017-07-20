@@ -1,0 +1,96 @@
+
+.main-container
+
+    .header 顧客ページ
+        #customer_pagenum.page-number
+
+    .btn-area.row.col-xs-12
+        button#customer_save.btn.save-btn(type='button') 保存
+        button#customer_postit.btn.new-btn(type='button') 付箋作成
+
+        ul#customer_menu.nav.nav-pills.nav-stacked
+            li: a#default_postit デフォルト付箋
+            li: a#address_postit 住所付箋
+            li: a#reservation_postit 予約・宿泊データ付箋
+            li: a#customerNumber_postit 顧客番号
+            li: a#file_postit ファイル添付用付箋
+
+    .default-tag-area.tag-area
+
+        .tag: .field
+            span.field-name 顧客氏名
+            input#customer_name.field-value(type='text',name='customer_name',placeholder='顧客氏名',required)
+
+        .tag: .field
+            span.field-name よみがな
+            input#customer_name_pronounce.field-value(type='text',name='customer_name_pronounce',placeholder='よみがな',required)
+
+    .extend-tags-area.tag-area
+
+    //------------------------------------------------------------------------------------------------------------------
+    //                                      Postit Add Dialog
+    //------------------------------------------------------------------------------------------------------------------
+    .modal.fade(id="postit_dialog",tabindex="-1", role="basic", aria-hidden="true", style="display: none;")
+        .modal-dialog
+            .modal-content
+                .modal-header
+                    h4.modal-title.text-success
+
+                div.col-xs-12
+                    label.col-xs-3.text-success 項目
+                    label.col-xs-3.text-success 機能
+                    label.col-xs-3.text-success 自動リサイズ
+                    label.col-xs-3.text-success 背景色
+
+                div.item-list
+
+                .modal-footer
+                    button.save_btn(type="button", class="btn btn-outline ", data-dismiss="modal") 追加
+                    button.cancel_btn(type="button", class="btn dark btn-outline modal-save-btn", data-dismiss="modal") 破棄
+
+
+    //------------------------------------------------------------------------------------------------------------------
+    //
+    //------------------------------------------------------------------------------------------------------------------
+    .modal.fade(id="basic",tabindex="-1", role="basic", aria-hidden="true", style="display: none;")
+        .modal-dialog
+            .modal-content
+                .modal-header
+                    button(type="button", class="close", data-dismiss="modal", aria-hidden="true")
+                    h4(class="modal-title text-danger") Please input 顧客氏名 and よみがな
+
+                .modal-footer
+                    button#modal_back_btn(type="button", class="modal_btn dark btn-outline", data-dismiss="modal") 戻って顧客氏名を記入する
+                    button#modal_nosave_btn(type="button", class="modal_btn btn-outline modal-save-btn") このページの更新を破棄する
+
+    //------------------------------------------------------------------------------------------------------------------
+    //
+    //------------------------------------------------------------------------------------------------------------------
+    .modal.fade(id="leave",tabindex="-1", role="basic", aria-hidden="true", style="display: none;")
+        .modal-dialog
+            .modal-content
+                .modal-header
+                    button(type="button", class="close", data-dismiss="modal", aria-hidden="true")
+                    h4(class="modal-title") Please input customer name and よみがな
+
+                .modal-footer
+                    button#modal_update_btn(type="button", class="btn btn-outline ") Save
+                    button#modal_leave_btn(type="button", class="btn dark btn-outline modal-save-btn", data-dismiss="modal") Leave
+
+    a#validation_click(class="btn red btn-outline sbold", data-toggle="modal", href="#basic", style="display:none") Show Modal
+    //------------------------------------------------------------------------------------------------------------------
+    //                                      File Upload Dialog
+    //------------------------------------------------------------------------------------------------------------------
+    fileupload_dialog
+    .modal.fade(id="fileupload_dialog",tabindex="-1", role="basic", aria-hidden="true", style="display: none;")
+        .modal-dialog
+            .modal-content
+                .modal-header
+                    h4.modal-title.text-success ファイル添付用付箋
+                div#drop-zone.drop-zone
+                    div#click-here.click-here
+                        span
+                        input#file-upload(type='file',name="files", data-url="/customer/api/fileupload")
+                .modal-footer
+                    button#save_file_btn(type="button", class="btn btn-outline ", data-dismiss="modal") 追加
+                    button#cancel_file_btn(type="button", class="btn dark btn-outline modal-save-btn", data-dismiss="modal") 破棄

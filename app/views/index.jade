@@ -1,0 +1,10 @@
+extends templates/layout
+
+block content
+    table.main-page-tbl
+        tr
+            td.left-menu
+                iframe.left-menu-frame(src='left-menu', name='menu-frame', scrolling="no", id="menu-frame")
+            td.right-content
+                iframe.right-content-frame(src='home', name='right-frame', scrolling="no")
+

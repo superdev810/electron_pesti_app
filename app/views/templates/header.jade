@@ -1,0 +1,24 @@
+doctype html
+html
+    head
+        title Register
+        meta(charset='utf-8')
+        meta(name="viewport",content="width=device-width, initial-scale=1")
+        link(rel="stylesheet", href="../lib/jquery-ui-1.12.1/jquery-ui.css")/
+        link(rel="stylesheet",href="../lib/bootstrap/dist/css/bootstrap.css")/
+        link(rel="stylesheet",href="../lib/font-awesome/css/font-awesome.min.css")/
+        link(rel="stylesheet",href="../css/common.css")/
+        block styles
+        script
+            //window.nodeRequire = require;
+            delete window.require;
+            delete window.exports;
+            delete window.module;
+        script(src="../lib/jquery/dist/jquery.min.js",onload="window.$ = window.jQuery;")
+        script(src="../lib/jquery-ui-1.12.1/jquery-ui.js")
+        script(src="../lib/bootstrap/dist/js/bootstrap.js")
+        script(src="../lib/blueimp-file-upload/js/jquery.fileupload.js")
+        script(src="../js/common.js")
+        block scripts
+    body
+        block content

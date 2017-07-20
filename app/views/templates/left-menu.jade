@@ -1,0 +1,23 @@
+extends layout
+block content
+    div.menu-container
+        a(href='customer?new=true', target='right-frame')
+            div#new_customer_add.menu-button 新規顧客
+        div.search-query-area
+            div.title 検索
+            input(type='text')#search_text
+        div.search-result-area
+            if (calendar == true)
+                each item in search_result
+                    ul.search_item
+                        li
+                            a(href='/customer?id=' + item._id, target='right-frame')
+                                =item.data.customer_name
+
+        a(href='expand', target='right-frame')
+            div.menu-button.menu-setting 拡張機能
+        script(src="../js/search.js")
+
+
+
+

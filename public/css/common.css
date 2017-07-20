@@ -1,0 +1,188 @@
+html, body {
+    height: 100%;
+    color: white;
+    overflow:hidden;
+    background: #eee;
+}
+.header{
+    text-align: center;
+    font-size: 24px;
+    background: #f9d48b;
+    padding: 10px;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+    font-weight: bold;
+    color: white;
+}
+input, textarea{
+    color: black;
+}
+input[type='checkbox']{
+    width: 18px;
+    height: 18px;
+}
+a{
+    text-decoration: none !important;
+}
+/* index page */
+.main-page-tbl{
+    width: 100%;
+    height: 100%;
+}
+.main-page-tbl iframe{
+    width: 100%;
+    height: 100%;
+    border: none;
+    padding: 0px;
+    overflow-y: hidden;
+}
+.left-menu{
+    width: 25%;
+    height: 100%;
+    min-width: 200px;
+    max-width: 300px;
+    padding: 10px;
+}
+.right-content{
+    width: 75%;
+    height: 100%;
+}
+/* left menu page */
+.menu-container{
+    position: relative;
+    height: 100%;
+}
+.menu-button{
+    padding: 10px;
+    border-radius: 5px;
+    background: linear-gradient(#0ea3ee, #035baa);
+    color: white;
+    text-decoration: none;
+    box-shadow: 0px 3px 5px rgba(0,0,0,.3);
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+.menu-button:hover{
+    background: -webkit-linear-gradient(#0ac0ee, #0c73bb);
+    background: -o-linear-gradient(#0ac0ee, #0c73bb);
+    background: -moz-linear-gradient(#0ac0ee, #0c73bb);
+    background: linear-gradient(#0ac0ee, #0c73bb);
+}
+.menu-button:hover:active{
+    background: linear-gradient(#0c73bb, #0aa1c9);
+    box-shadow: 0px 0px 5px rgba(0,0,0,.5);
+}
+.search-query-area{
+    margin-top: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 3px 5px rgba(0,0,0,.3);
+    min-height: 70px;
+    background: #5f9fdb;
+    text-align: center;
+}
+.search-query-area .title{
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    padding: 5px;
+}
+.search-query-area #search_text{
+    width: 95%;
+    background: #e2f0fd;
+    border: solid 1px #eee;
+    line-height: 25px;
+    font-size: 18px;
+    padding-left: 5px;
+    border-radius: 3px;
+}
+.search-query-area #search_text:focus{ background: white; }
+
+.search-result-area{
+    overflow: auto;
+    position: absolute;
+    width: 100%;
+    bottom: 60px;
+    height: auto;
+    top: 125px;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 3px 5px rgba(0,0,0,.3);
+    background: #5f9fdb;
+    text-align: left;
+}
+.menu-button.menu-setting{
+    position: absolute;
+    bottom: 5px;
+    width: 100%;
+}
+
+.main-container{
+    position: absolute;
+    left: 0px;
+    right: 10px;
+    top: 10px;
+    bottom: 10px;
+    border-radius: 10px;
+    background: #ffd581;
+    overflow: auto;
+    box-shadow: 3px 3px 5px rgba(0,0,0,.3);
+}
+
+.home-page .setting-area{
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    min-height: 50px;
+    background: #5b9bd5;
+}
+.home-page .setting-area .setting-save-btn{
+    float: right;
+    width: 100px;
+    margin: 10px;
+    padding: 5px;
+    bottom: 10px;
+    right: 10px;
+    border-radius: 5px;
+    background: linear-gradient(#eedc00, #aaa400);
+    color: black;
+    text-decoration: none;
+    box-shadow: 0px 3px 5px rgba(0,0,0,.3);
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+}
+.home-page .setting-area .setting-save-btn:hover{
+    color: white;
+    background: -webkit-linear-gradient(#eeeb07, #a8aa03);
+    background: -o-linear-gradient(#eeeb07, #a8aa03);
+    background: -moz-linear-gradient(#eeeb07, #a8aa03);
+    background: linear-gradient(#eeeb07, #a8aa03);
+}
+.home-page .setting-area .setting-save-btn:active{
+    background: linear-gradient(#a8aa03, #c7c406);
+    box-shadow: 0px 0px 5px rgba(0,0,0,.5);
+}
+
+/* Email setting*/
+#setting-email-error {
+    display: none;
+    color: #bb0000;
+
+}
+/* Expandision page */
+.checkbox-size {
+    width: 20px;
+    height: 20px;
+}
+
+/* calendar */
+#datepicker {
+    width: 400px;
+    height: 250px;
+    margin: 0 auto;
+}
+.ui-datepicker {
+    width: 400px;
+    height: 250px;
+}
+
